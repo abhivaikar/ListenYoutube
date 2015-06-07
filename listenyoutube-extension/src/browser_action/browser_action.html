@@ -1,13 +1,29 @@
 <!doctype html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	`<!-- FONTS -->
+	<link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<!-- CSS -->
+	<link rel="stylesheet" href="resources/normalize.css">
+	<link rel="stylesheet" href="resources/skeleton.css">
+	<link rel="stylesheet" href="resources/custom.css">
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<style type="text/css">
-	body {width:500px; height:500px;}
+	
 	</style>
 </head>
 <body>
-<input id="youtube-url" type="text"/>
-<button type="button" id="loadURL">Load and play</button>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL79BAA2613AC17A32" frameborder="0" allowfullscreen></iframe>
+	<div class="container">
+		<section class="header">
+			<h5 class="title">Listen to YouTube video</h5>
+		</section>
+		<div class="row">
+			<div class="nine columns"><input class="u-full-width" type="text" placeholder="YouTube Video URL" id="youtube-video-input"></div>
+			<div class="three columns"><input class="button-primary" type="button" value="Listen!" id="listen-button"></div>		
+			
+		</div>
+	</div>
 </body>
 </html>
